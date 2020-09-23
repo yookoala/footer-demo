@@ -1,0 +1,51 @@
+<!doctype html>
+<html>
+<head>
+<title>Bottom Content Display Test</title>
+<style>
+/* generic style reset */
+* {
+  box-sizing: border-box; 
+}
+body {
+  margin: 0;
+  padding: 0;
+}
+
+/* styles to test with */
+main {
+  height: 100vh;
+  width: 100vw;
+}
+footer {
+  position: absolute;
+  bottom: 0;
+  height: 40px;
+  width: 100vw;
+}
+
+/* below styles are for cosmetic only */
+main {
+  text-align: center;
+  overflow: hidden;
+}
+main p {
+  display: block;
+  padding: calc(50vh - 2em) 3em 0;
+}
+footer {
+  padding-top: 0.3em;
+  text-align: center;
+  background-color: rgba(200, 255, 200, 1);
+}
+</style>
+</head>
+<body>
+<main>
+  <p>You should be able to see "Footer" at the bottom of this page.</p> 
+</main>
+<footer>
+  Footer
+</footer>
+</body>
+</html>
