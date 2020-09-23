@@ -1,0 +1,59 @@
+<!doctype html>
+<html>
+<head>
+<title>Bottom Content Display Test</title>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<style>
+/* generic style reset */
+* {
+  box-sizing: border-box; 
+}
+body {
+  margin: 0;
+  padding: 0;
+}
+
+/* styles to test with */
+main {
+  height: 100vh;
+  width: 100vw;
+}
+footer {
+  position: absolute;
+  bottom: 0;
+  height: 40px;
+  width: 100vw;
+}
+
+/* below styles are for cosmetic only */
+@media (max-width: 800px) {
+  body {
+    font-size: 18pt;
+  }
+}
+main {
+  text-align: center;
+  overflow: hidden;
+}
+main p {
+  display: block;
+  padding: calc(50vh - 2em) 3em 0;
+}
+footer {
+  padding-top: 0.3em;
+  text-align: center;
+  background-color: rgba(200, 255, 200, 1);
+}
+</style>
+
+</head>
+<body>
+<main>
+  <footer>
+    Footer
+  </footer>
+</main>
+</body>
+</html>
